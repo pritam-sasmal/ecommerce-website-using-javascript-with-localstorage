@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            text-shadow: 1px 1px 1px #ccc;
+            margin-bottom: 20px;
+        }
+
+        #productContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            width: 300px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px #ccc;
+        }
+
+        .product-item button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 1px 1px 3px #666;
+        }
+
+        #btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #btn-container button {
+            margin: 0 5px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #666;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 70rem;
+        }
+
+        #username {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #666;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .buttons button {
+            align-self: flex-end;
+            margin: 0 5px;
+            /* display: inline-block; */
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #666;
+            cursor: pointer;
+        }
+
+        .buttons div {
+            justify-content: space-between;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="buttons">
+            <div>
+                <button id="username"></button>
+            </div>
+            <div>
+
+                <a href="../login.html"><button id="login">Login</button></a>
+            </div>
+            <div>
+
+                <a href="../signup.html"><button id="signup">Signup</button></a>
+            </div>
+            <div>
+
+                <button id="logout">Logout</button>
+            </div>
+            <div>
+
+                <a href="../cart.html"><button id="show-products">cart product</button></a>
+            </div>
+        </div>
+        <h1>Welcome to our website</h1>
+
+    </div>
+    <div id="productContainer">
+        <!-- Product items will be added dynamically -->
+    </div>
+    <div id="btn-container">
+        <button id="view-more">View More</button>
+        <button id="view-less">View Less</button>
+    </div>
+    <script src="prod.js"></script>
+</body>
+
+</html>

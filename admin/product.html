@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .edit,
+        .delete {
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Admin Page</h1>
+    <button id="logout" >Logout</button>
+    <form id="productForm" enctype="multipart/form-data">
+        Product id: <input type="text" id="pid" name="pid"><br><br>
+        Product Name: <input type="text" id="name" name="name"><br><br>
+        Price: <input type="number" id="price" name="price"><br><br>
+        Quantity: <input type="number" id="qty" name="Quantity"><br><br>
+        Image: <input type="file" id="image" name="image"><br><br>
+        <input type="submit" id="btn" value="Add">
+    </form>
+    <table id="productTable" border="1">
+        <!-- Your existing table structure -->
+    </table>
+    <script src="product.js"></script>
+</body>
+
+</html>
